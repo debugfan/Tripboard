@@ -6,6 +6,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 //import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
 
+declare var Bmob: any;
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -18,6 +20,9 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
+
+      //init bmob
+      Bmob.initialize("385036aeb4ed020afff616b304b30c61", "7ebd484fcf1374942f4b8c04531564ff");
     });
   }
 }
