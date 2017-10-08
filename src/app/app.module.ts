@@ -6,8 +6,10 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
-//import { TabsPage } from '../pages/tabs/tabs';
+import { MePage } from '../pages/me/me';
+import { TabsPage } from '../pages/tabs/tabs';
 
+import { RegisterPage } from '../pages/register/register';
 import { LoginPage } from '../pages/login/login';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -22,7 +24,9 @@ import { HttpModule } from '@angular/http';
     AboutPage,
     ContactPage,
     HomePage,
-//    TabsPage,
+    MePage,
+    TabsPage,
+    RegisterPage,
     LoginPage
   ],
   imports: [
@@ -36,7 +40,9 @@ import { HttpModule } from '@angular/http';
     AboutPage,
     ContactPage,
     HomePage,
-//    TabsPage,
+    MePage,
+    TabsPage,
+    RegisterPage,
     LoginPage
   ],
   providers: [
